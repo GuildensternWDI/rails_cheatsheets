@@ -1,4 +1,4 @@
-# Responding with XML and JSON (Rails Controllers)
+# Responding with XML and JSON (Controllers)
 
 By default, when we write the [controller action](http://edgeguides.rubyonrails.org/action_controller_overview.html#methods-and-actions) below, what is returned is given an [HTTP response header](http://en.wikipedia.org/wiki/List_of_HTTP_header_fields#Response_fields) of `Content-Type: text/html`, and any data (rendered by default from the view at `/app/views/users/index.html.erb`) is expected to be formatted as HTML.
 
