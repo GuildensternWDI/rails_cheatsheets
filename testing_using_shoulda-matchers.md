@@ -26,9 +26,8 @@ require 'shoulda/matchers'
 
 Given the model `/app/models/user.rb` that has the attributes email, name and password, and relationships with the models Group, Account, and Feeds, such that:
   - a user belongs to a group (ie, a user has one group, and a group has many users),
-  - a user has a single account they are related to if they are paying subcribers,
-  - a user has many feeds that they have created, and
-  - a user has many more feeds that they have starred.
+  - a user has a single account they are related to if they are paying subcribers, and
+  - a user has many feeds that they have starred.
 
 We can write the following spec at `spec/models/user_spec.rb`:
 
@@ -39,7 +38,6 @@ describe User do
   # associations
   it { should belong_to(:group)  }
   it { should have_one(:account) }
-  it { should have_many(:feeds)  }
   it { should have_many(:feeds).through(:stars) }
   
   # validations
@@ -54,6 +52,14 @@ This spec will pass when we write the model so that:
 
 ```ruby
 class User < ActiveRecord::Base
+  belongs_to :group
+  has_one    :account
+  has_many   :stars
+  has_many   :feeds, through: :stars
 
+  validates :email, presence: true, uniqueness: true
+  validates :name, presence: true
+
+  has_secure_password # this ensures password confirmation!
 end
 ```
