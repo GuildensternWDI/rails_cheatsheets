@@ -14,7 +14,7 @@ group :test do
 end
 ```
 
-... and then require the gem our `/spec/rails_helper.rb` file:
+... and then requiring it our `/spec/rails_helper.rb` file:
 
 ```ruby
 ...
@@ -24,12 +24,16 @@ require 'shoulda/matchers'
 
 ### Example
 
-Given the model `/app/models/user.rb` that has ...
+Given the model `/app/models/user.rb` that has the attributes email, name and password, and relationships with the models Group, Account, and Feeds, such that:
+  - a user belongs to a group (ie, a user has one group, and a group has many users),
+  - a user has a single account they are related to if they are paying subcribers,
+  - a user has many feeds that they have created, and
+  - a user has many more feeds that they have starred.
 
-We can write the follwing spec at `spec/models/user_spec.rb`:
+We can write the following spec at `spec/models/user_spec.rb`:
 
 ```ruby
-require 'spec_helper'
+require 'rails_helper'
 
 describe User do
   # associations
