@@ -1,10 +1,28 @@
-# Using shoulda-matchers with ActiveRecord (Testing)
+# Using `shoulda-matchers` with ActiveRecord (Testing)
 
-Once you have [set up RSpec and Capybara](testing_rspec_and_capybara.md) for you Rails app, you can use [thoughtbot's](http://thoughtbot.com/) `should-matcher` library ([Github](https://github.com/thoughtbot/shoulda-matchers), [Documentation](http://thoughtbot.github.io/shoulda-matchers)) to create simple, one-line tests for common Rails functionality in our models and controllers.
+Once we have [set up RSpec and Capybara](testing_rspec_and_capybara.md) for you Rails app, we can use [thoughtbot's](http://thoughtbot.com/) `should-matcher` library ([Github](https://github.com/thoughtbot/shoulda-matchers), [Documentation](http://thoughtbot.github.io/shoulda-matchers)) to create simple, one-line tests for common Rails functionality in our models and controllers.
 
 Most importantly, we can use `shoulda-matchers` to write unit tests for our models' **associations** and **validations**. While this might seem like simple boilerplate to begin with, it is a powerful setup to ensure basic functionality once we begin to add complex logic to our application.
 
-### Examples:
+### Installation
+
+We can install `shoulda-matchers` by including the gem in our Gemfile:
+
+```ruby
+group :test do
+  gem 'shoulda-matchers', require: false
+end
+```
+
+... and then require the gem our `/spec/rails_helper.rb` file:
+
+```ruby
+...
+require 'rspec/rails' # after here!
+require 'shoulda/matchers'
+```
+
+### Example
 
 Given the model `/app/models/user.rb` that has ...
 
