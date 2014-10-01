@@ -33,13 +33,13 @@ All of the cheatsheets below have been written by the Guildenstern WDI class and
 
 [testing_using_shoulda-matchers]: testing_using_shoulda-matchers.md
 [controllers_xml_and_json]:       controllers_xml_and_json.md
+[db_and_models_migrations]:       db_and_models_migrations.md 
 
 <!-- Note: by moving the requisite link below out of the comment and up above, -->
 <!--       the link will go live... -->
 
 <!-- not completed yet [command_line_rails]:             command_line_rails.md -->
 <!-- not completed yet [command_line_generate]:          command_line_generate.md -->
-<!-- not completed yet [db_and_models_migrations]:       db_and_models_migrations.md -->
 <!-- not completed yet [db_and_models_associations]:     db_and_models_associations.md -->
 <!-- not completed yet [db_and_models_validations]:      db_and_models_validations.md -->
 <!-- not completed yet [db_and_models_bcrypt]:           db_and_models_bcrypt.md -->
