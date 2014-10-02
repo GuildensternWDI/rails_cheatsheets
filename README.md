@@ -19,7 +19,7 @@ All of the cheatsheets below have been written by the Guildenstern WDI class and
 |   Controllers               | [Using Filters in Controllers][controllers_filters]                                       |   1   |
 | **Basic Forms and Helpers** | [**Basic HTML Helpers: `link_to`, `button_tag`, `form_tag`**][basic_helpers_html_helpers] | **2** |
 |   Basic Forms and Helpers   | [Forms and CSRF "Authenticity Tokens"][basic_helpers_forms_and_csrf]                      |   1   |
-|   Basic Forms and Helpers   | [Form Helpers for Select, Date and Time Inputs][basic_helpers_form_helpers]               |   1   |
+|   Basic Forms and Helpers   | [Form Helpers for Select, Date and Time Inputs][basic_helpers_select_option]               |   1   |
 |   Basic Forms and Helpers   | [File Upload with Form Helpers][basic_helpers_file_upload]                                |   1   |
 | **Model Forms for CRUD**    | [**The `form_for` Helper**][model_forms_form_for]                                         | **2** |
 | **Model Forms for CRUD**    | [**Strong Params and Mass Assignment**][model_forms_strong_params]                        | **2** |
@@ -34,6 +34,7 @@ All of the cheatsheets below have been written by the Guildenstern WDI class and
 [testing_using_shoulda-matchers]: testing_using_shoulda-matchers.md
 [controllers_xml_and_json]:       controllers_xml_and_json.md
 [db_and_models_migrations]:       db_and_models_migrations.md 
+[basic_helpers_select_option]:     basic_helpers_select_option.md
 
 <!-- Note: by moving the requisite link below out of the comment and up above, -->
 <!--       the link will go live... -->
@@ -48,7 +49,6 @@ All of the cheatsheets below have been written by the Guildenstern WDI class and
 <!-- not completed yet [views_assets]:                   views_assets.md -->
 <!-- not completed yet [basic_helpers_html_helpers]:     basic_helpers_html_helpers.md -->
 <!-- not completed yet [basic_helpers_forms_and_csrf]:   basic_helpers_forms_and_csrf.md -->
-<!-- not completed yet [basic_helpers_form_helpers]:     basic_helpers_form_helpers.md -->
 <!-- not completed yet [basic_helpers_file_upload]:      basic_helpers_file_upload.md -->
 <!-- not completed yet [model_forms_form_for]:           model_forms_form_for.md -->
 <!-- not completed yet [model_forms_strong_params]:      model_forms_strong_params.md -->
